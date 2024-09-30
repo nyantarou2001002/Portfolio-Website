@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <title>ポートフォリオサイト</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" 
+rel="stylesheet"/>
+<link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+crossorigin="anonymous" 
+referrerpolicy="no-referrer" />
+</head>
+<body class="font-poppins bg-body text-white">
+    <!-- ナビゲーションバー -->
+    <header class="py-6">
+        <div class="container mx-auto flex justify-between items-center px-8 md:px-14 lg:px-24 w-full">
+            <div class="text-lg font-bold">Kotaro Ito</div>
+            <div class="space-x-12 hidden md:flex items-center">
+                <a 
+                href="#home" 
+                class="hover:text-selected-text transition-all duration-300">ホーム</a
+                >
+                <a 
+                href="#portfolio" 
+                class="hover:text-selected-text transition-all duration-300">ポートフォリオ</a
+                >
+              
+                
+            </div>
+            <div class="md:hidden">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- ヒーローセクション -->
+    <div 
+    id="home" 
+    class="container mt-16 flex flex-col sm:flex-row justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full"
+    >
+        <div class="flex flex-col sm:flex-row md:flex-nowrap">
+            <div class="md:my-36 lg:ml-20 justify-center sm:justify-center md:justify-start max-w-xl flex-wrap flex flex-col items-center sm:items-center md:items-start">
+                <h1 class="font-bold text-5xl text-center sm:text-center md:text-left lg:text-6xl">
+                    Hi, <br />
+                    I'm Kotaro, <br />
+                    web developer
+                </h1>
+                <button 
+                class="px-6 py-4 bg-theme font-bold rounded-lg hover:bg-purple-600 transition-all duration-300 mt-10">
+                    <i class="fa-solid fa-rocket mr-1"></i>
+                    <span>もっと見る</span>
+                </button>
+            </div>
+            
+            <img src="./images/jel.jpg" 
+            alt="image" 
+            class="sm:mt-12 sm:w-5/6 md:absolute lg:top-2 lg:right-100 md:w-3/5 w-10/12 mt-12 md:mt-0 right-6 mx-auto -z-10 lg:w-3/6" />
+        </div>
+    </div>
+    
+    <!-- ポートフォリオセクション -->
+    <div 
+    id="portfolio" 
+    class="container mt-64 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full"
+    >
+    <section class="w-full">
+        <h2 class="secondary-title">My Work</h2>
+        <p class="section-paragraph">
+            私が作ってきたWebアプリケーションはこちら。写真をクリックするとGitHubのページに飛びます。
+        </p>
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6">
+            <a href="https://github.com/nyantarou2001002/Local-Chat-Messenger" target="_blank">
+                <img 
+                src="./images/local2.jpg" 
+                alt="" 
+                class="w-full h-36 lg:h-72 object-cover rounded-md cursor-pointer"/>
+            </a>
+
+            <a href="https://github.com/nyantarou2001002/portfolio-website" target="_blank">
+                <img 
+                src="./images/home.jpg" 
+                alt="" 
+                class="w-full h-36 lg:h-72 object-cover rounded-md cursor-pointer"/>
+            </a>
+
+            <a href="https://github.com/nyantarou2001002/Markdown-to-HTML-Converter" target="_blank">
+                <img 
+                src="./images/markdown3.jpg" 
+                alt="" 
+                class="w-full h-36 lg:h-72 object-cover rounded-md cursor-pointer"/>
+            </a>
+
+            <a href="https://github.com/nyantarou2001002/Note-App" target="_blank">
+                <img 
+                src="./images/note2.jpg" 
+                alt="" 
+                class="w-full h-36 lg:h-72 object-cover rounded-md cursor-pointer"/>
+            </a>
+
+            <a href="https://github.com/nyantarou2001002/Guess-the-number-game" target="_blank">
+                <img 
+                src="./images/number.jpg" 
+                alt="" 
+                class="w-full h-36 lg:h-72 object-cover rounded-md cursor-pointer"/>
+            </a>
+
+            <a href="https://github.com/nyantarou2001002/Online-Chat-Messenger" target="_blank">
+                <img 
+                src="./images/onlinechat.jpg" 
+                alt="" 
+                class="w-full h-36 lg:h-72 object-cover rounded-md cursor-pointer"/>
+            </a>
+
+            <a href="https://github.com/nyantarou2001002/Remote-Procedure-Call" target="_blank">
+                <img 
+                src="./images/rpc.jpg" 
+                alt="" 
+                class="w-full h-36 lg:h-72 object-cover rounded-md cursor-pointer"/>
+            </a>
+            
+            <a href="https://github.com/nyantarou2001002/Simple-Trello" target="_blank">
+                <img 
+                src="./images/simpletrello.jpg" 
+                alt="" 
+                class="w-full h-36 lg:h-72 object-cover rounded-md cursor-pointer"/>
+            </a>
+
+            <a href="https://github.com/nyantarou2001002/StudentManagement" target="_blank">
+                <img 
+                src="./images/studentmanagement.jpg" 
+                alt="" 
+                class="w-full h-36 lg:h-72 object-cover rounded-md cursor-pointer"/>
+            </a>
+
+            <a href="https://github.com/nyantarou2001002/Video-Compressor-Service" target="_blank">
+                <img 
+                src="./images/video2.jpg" 
+                alt="" 
+                class="w-full h-36 lg:h-72 object-cover rounded-md cursor-pointer"/>
+            </a>
+
+            <a href="https://github.com/nyantarou2001002/File-Manipulator-Program" target="_blank">
+                <img 
+                src="./images/file.jpg" 
+                alt="" 
+                class="w-full h-36 lg:h-72 object-cover rounded-md cursor-pointer"/>
+            </a>
+            
+
+
+
+          
+
+        </div>
+
+    </section>
+        
+    </div>
+
+    <!-- スキルスタック -->
+    <div 
+    id="portfolio" 
+    class="container mt-64 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full"
+    >
+    <section class="w-full">
+        <h2 class="secondary-title">Skills</h2>
+        <p class="section-paragraph">
+            私は以下技術を使用して上記のプロジェクトを作りました。
+        </p>
+        <!-- Javascript -->
+        <div class="my-16">
+            <div class="w-full border border-purple-300 p-16 lg:px-32 lg:py-20 flex justify-center lg:justify-start flex-wrap lg:space-x-32 hover:border-yellow-300 transition-all duration-300 cursor-pointer">
+            <!-- 技術のロゴ -->
+            <div class="mb-6 lg:mb-0 self-center">
+            <i class="fa-brands fa-js text-9xl text-yellow-300"></i>
+            </div>
+
+            <!-- スキルの説明 -->
+            <div class="text-center flex flex-wrap justify-center lg:text-left lg:block">
+                <h3 class="text-3xl font-semibold">Javascript</h3>
+                <div class="flex flex-wrap w-full justify-center gap-3 lg:w-auto lg:justify-start mt-6 mb-8">
+                <div class="badge">フロントエンド開発</div>
+                <div class="badge">バックエンド開発</div>
+                </div>
+                <p class="text-secondary">主にフロントエンド開発をする際に使用しています。</p>
+            </div>
+
+            </div>
+
+        <!-- Python -->
+        </div>
+        <div class="my-16">
+            <div class="w-full border border-purple-300 p-16 lg:px-32 lg:py-20 flex justify-center lg:justify-start flex-wrap lg:space-x-32 hover:border-blue-600 transition-all duration-300 cursor-pointer">
+            <!-- 技術のロゴ -->
+            <div class="mb-6 lg:mb-0 self-center">
+            <i class="fa-brands fa-python text-9xl text-blue-600"></i>
+            </div>
+
+            <!-- スキルの説明 -->
+            <div class="text-center flex flex-wrap justify-center lg:text-left lg:block">
+                <h3 class="text-3xl font-semibold">Python</h3>
+                <div class="flex flex-wrap w-full justify-center gap-3 lg:w-auto lg:justify-start mt-6 mb-8">
+                <div class="badge">バックエンド開発</div>
+                </div>
+                <p class="text-secondary">バックエンド開発の際に使用。</p>
+            </div>
+
+            </div>
+
+
+        </div>
+        <!-- HTML/CSS -->
+        <div class="my-16">
+            <div class="w-full border border-purple-300 p-16 lg:px-32 lg:py-20 flex justify-center lg:justify-start flex-wrap lg:space-x-32 hover:border-orange-400 transition-all duration-300 cursor-pointer">
+            <!-- 技術のロゴ -->
+            <div class="mb-6 lg:mb-0 self-center">
+            <i class="fa-brands fa-html5 text-9xl text-orange-400"></i>
+            </div>
+
+            <!-- スキルの説明 -->
+            <div class="text-center flex flex-wrap justify-center lg:text-left lg:block">
+                <h3 class="text-3xl font-semibold">HTMl/CSS</h3>
+                <div class="flex flex-wrap w-full justify-center gap-3 lg:w-auto lg:justify-start mt-6 mb-8">
+                <div class="badge">フロントエンド開発</div>
+                <div class="badge">UI/UX</div>
+                </div>
+                <p class="text-secondary">フロントエンド開発の際に使用しています。</p>
+            </div>
+
+            </div>
+
+
+        </div>
+
+        <!-- React -->
+        <div class="my-16">
+            <div class="w-full border border-purple-300 p-16 lg:px-32 lg:py-20 flex justify-center lg:justify-start flex-wrap lg:space-x-32 hover:border-cyan-400 transition-all duration-300 cursor-pointer">
+            <!-- 技術のロゴ -->
+            <div class="mb-6 lg:mb-0 self-center">
+                <i class="fa-brands fa-react text-9xl text-cyan-400"></i>
+            </div>
+
+            <!-- スキルの説明 -->
+            <div class="text-center flex flex-wrap justify-center lg:text-left lg:block">
+                <h3 class="text-3xl font-semibold">React</h3>
+                <div class="flex flex-wrap w-full justify-center gap-3 lg:w-auto lg:justify-start mt-6 mb-8">
+                <div class="badge">フロントエンド開発</div>
+                <div class="badge">UI/UX</div>
+                </div>
+                <p class="text-secondary">主にフロントエンド開発をする際に使用しています。</p>
+            </div>
+
+            </div>
+
+
+        </div>
+
+        
+        <!-- Java -->
+        <div class="my-16">
+            <div class="w-full border border-purple-300 p-16 lg:px-32 lg:py-20 flex justify-center lg:justify-start flex-wrap lg:space-x-32 hover:border-white transition-all duration-300 cursor-pointer">
+            <!-- 技術のロゴ -->
+            <div class="mb-6 lg:mb-0 self-center">
+                <i class="fa-brands fa-java text-9xl text-white"></i>
+            </div>
+
+            <!-- スキルの説明 -->
+            <div class="text-center flex flex-wrap justify-center lg:text-left lg:block">
+                <h3 class="text-3xl font-semibold">Java</h3>
+                <div class="flex flex-wrap w-full justify-center gap-3 lg:w-auto lg:justify-start mt-6 mb-8">
+                <div class="badge">バックエンド開発</div>
+                </div>
+                <p class="text-secondary">主にバックエンド開発をする際に使用しています。</p>
+            </div>
+
+            </div>
+
+
+        </div>
+
+        <!-- AWS -->
+        <div class="my-16">
+            <div class="w-full border border-purple-300 p-16 lg:px-32 lg:py-20 flex justify-center lg:justify-start flex-wrap lg:space-x-32 hover:border-white transition-all duration-300 cursor-pointer">
+            <!-- 技術のロゴ -->
+            <div class="mb-6 lg:mb-0 self-center">
+            <i class="fa-brands fa-aws text-9xl text-white"></i>
+            </div>
+
+            <!-- スキルの説明 -->
+            <div class="text-center flex flex-wrap justify-center lg:text-left lg:block">
+                <h3 class="text-3xl font-semibold">AWS</h3>
+                <div class="flex flex-wrap w-full justify-center gap-3 lg:w-auto lg:justify-start mt-6 mb-8">
+                <div class="badge">バックエンド開発</div>
+                </div>
+                <p class="text-secondary">主にバックエンド開発をする際にEC2やRDBなどを使用しています。</p>
+            </div>
+
+            </div>
+
+
+        </div>
+
+        <!-- Docker -->
+        <div class="my-16">
+            <div class="w-full border border-purple-300 p-16 lg:px-32 lg:py-20 flex justify-center lg:justify-start flex-wrap lg:space-x-32 hover:border-blue-600 transition-all duration-300 cursor-pointer">
+            <!-- 技術のロゴ -->
+            <div class="mb-6 lg:mb-0 self-center">
+                <i class="fa-brands fa-docker text-9xl text-blue-600"></i>
+            </div>
+
+            <!-- スキルの説明 -->
+            <div class="text-center flex flex-wrap justify-center lg:text-left lg:block">
+                <h3 class="text-3xl font-semibold">Docker</h3>
+                <div class="flex flex-wrap w-full justify-center gap-3 lg:w-auto lg:justify-start mt-6 mb-8">
+                <div class="badge">バックエンド開発</div>
+                </div>
+                <p class="text-secondary">主にバックエンド開発をする際のMySQLを使用する際に使用しています。</p>
+            </div>
+
+            </div>
+
+
+        </div>
+
+        <!-- MySQL -->
+        <div class="my-16">
+            <div class="w-full border border-purple-300 p-16 lg:px-32 lg:py-20 flex justify-center lg:justify-start flex-wrap lg:space-x-32 hover:border-x-blue-800 transition-all duration-300 cursor-pointer">
+            <!-- 技術のロゴ -->
+            <div class="mb-6 lg:mb-0 self-center">
+                <i class="fa-solid fa-database text-9xl text-blue-800"></i>
+            </div>
+
+            <!-- スキルの説明 -->
+            <div class="text-center flex flex-wrap justify-center lg:text-left lg:block">
+                <h3 class="text-3xl font-semibold">MySQL</h3>
+                <div class="flex flex-wrap w-full justify-center gap-3 lg:w-auto lg:justify-start mt-6 mb-8">
+                <div class="badge">バックエンド開発</div>
+                </div>
+                <p class="text-secondary">主にバックエンド開発をする際にデータを格納するために使用しています。</p>
+            </div>
+
+            </div>
+
+
+        </div>
+
+        <!-- Spring Boot -->
+        <div class="my-16">
+            <div class="w-full border border-purple-300 p-16 lg:px-32 lg:py-20 flex justify-center lg:justify-start flex-wrap lg:space-x-32 hover:border-green-500 transition-all duration-300 cursor-pointer">
+            <!-- 技術のロゴ -->
+            <div class="mb-6 lg:mb-0 self-center">
+                <i class="fa-solid fa-power-off text-8xl text-green-500"></i>
+            </div>
+
+            <!-- スキルの説明 -->
+            <div class="text-center flex flex-wrap justify-center lg:text-left lg:block">
+                <h3 class="text-3xl font-semibold">Spring Boot</h3>
+                <div class="flex flex-wrap w-full justify-center gap-3 lg:w-auto lg:justify-start mt-6 mb-8">
+                <div class="badge">バックエンド開発</div>
+                </div>
+                <p class="text-secondary">主にバックエンド開発をする際のJavaのフレームワークとして使用しています。</p>
+            </div>
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+        
+    </div>
+
+
+
+</body>
+</html>

@@ -9,6 +9,7 @@ module.exports = {
         theme: "#5c318c",
         secondary: "#9191A4",
         badge: "#3F3F51",
+        "custom-purple": "#9999FF",
       },
     },
       fontFamily: {

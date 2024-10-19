@@ -11,3 +11,4 @@ https://portfolio.mdtohtml.com/
 - TailwindCSS
 - AWS EC2
 - nginx
+- Javascript
